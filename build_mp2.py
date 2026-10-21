@@ -40,7 +40,7 @@ QUAL = {
         pattern="declining",
         before="Bug fixes:Documentation updates",
         after="Bug fixes:Documentation updates",
-        reason="N/A active Project is the wrong box here: there is a real 9-month hole. Maintenance had already fallen from 298 commits in 2017 to about 20 a year, most of them generated doc builds, and the messages around the hole do not say why it opened.",
+        reason="Maintenance had already fallen from 298 commits in 2017 to about 20 a year, mostly generated doc builds. The last commits before the 9-month hole are a Mars-constants fix and a version bump, and none of them says why work paused. The likely cause is a thin maintainer base with nothing urgent to fix.",
         recovered="Yes",
         why="Henrik Wolf, who has no commits before the gap, fixes the sunpos docstring and an lsf_rotate inference regression. The pace then rises to 53 commits in 2024 and 71 in 2025, still far under the 2017 peak.",
         who="Henrik Wolf (no commits before the gap)",
@@ -70,7 +70,7 @@ QUAL = {
         who="Martina Callaghan (already committing before the gap), then the FIL branch",
         status="Active",
         recent="Bug fixes:Documentation updates",
-        notes="This is not a smooth trend. 2017 has 354 commits, 2019 drops to 30, and 2024 is back to 271, which is irregular rather than a single rise or decline. The longest hole is early, 2015-05 through 2016-02, and it is the reorganization from the VBQ SVN branch into the shared hMRI repository, not the project dying. The latest commits correct the imperfect-spoiling calculation and update the changelog. GitHub's last commit is 2026-09-16, so it is Active.",
+        notes="Yearly commits swing from 354 in 2017 to 30 in 2019 and back to 271 in 2024, so the pattern is irregular. The longest hole, 2015-05 through 2016-02, is the move from the VBQ SVN branch into the shared hMRI repository, not the project dying. Martina Callaghan ends it with a release, and the author count grows from 2 to 42. GitHub's last commit is 2026-09-16, so it is Active.",
     ),
     "tdda_tdda": dict(
         pattern="U-shaped",
@@ -82,7 +82,7 @@ QUAL = {
         who="Nick Radcliffe (already committing before the gap)",
         status="Active",
         recent="Bug fixes:Feature development",
-        notes="The shape is a rise through 2018, a collapse in 2020-2021, and a return that passes the old peak, so this is U-shaped. The longest hole is 11 months, 2022-03 through 2023-01, and the commits on either side do not explain it. The return is a 2.0 release and packaging work by Nick Radcliffe, who was already a contributor. The latest commits fix setup.py and add discover flags. GitHub's last commit is 2026-07-13, later than WoC, and the project is Active.",
+        notes="Commits rise to 222 in 2018, collapse in 2020-2021, and reach 331 in 2025, so this is U-shaped. The longest hole is 11 months, 2022-03 through 2023-01, and the commits on either side do not explain it. Nick Radcliffe, an existing contributor, ends it with the 2.0 release and packaging work. GitHub's last commit is 2026-07-13, so it is Active.",
     ),
     "openspace_openspace": dict(
         pattern="steady",
@@ -94,7 +94,7 @@ QUAL = {
         who="N/A",
         status="Active",
         recent="Feature development:Other",
-        notes="After a ramp in 2014-2015, yearly commits stay between about 1,800 and 3,400 from 2016 through 2025. That is steady, not a rise or a cycle. The two-month hole in 2015 sits on the switch to a new SGCT and is the longest empty stretch in the whole history, so it is not an inactivity gap. Recent work splits asset files and changes the minor-moons addon. GitHub's last commit is 2026-09-26, so the project is Active.",
+        notes="After a 2014-2015 ramp, yearly commits stay between about 1,800 and 3,400, so the pattern is steady. The longest empty stretch is two months in 2015, during the move to a new SGCT, and no gap reaches three months. There is no inactivity to recover from. GitHub's last commit is 2026-09-26, so it is Active.",
     ),
     "photon-hdf5_phconvert": dict(
         pattern="U-shaped",
@@ -106,7 +106,7 @@ QUAL = {
         who="Paul Harris (no commits before the gap)",
         status="Active",
         recent="Documentation updates:Feature development",
-        notes="Calling this only a decline would hide the shape: a busy start, two empty years, then 101 commits in 2024. That is U-shaped, with a partial recovery. The longest hole is 35 months, 2021-06 through 2024-04, and nothing in the commit text says why it opened. Paul Harris ends it with new file types and a build-system move. The latest commits update the README for a release and extend QC-card support. GitHub's last commit is 2026-09-08, so it is Active.",
+        notes="A busy 2015, two empty years, and 101 commits in 2024 make this U-shaped with a partial recovery. The longest hole is 35 months, 2021-06 through 2024-04, and the commit text does not say why it opened. Paul Harris, new to the project, ends it with new PTU file types and a build-system move. GitHub's last commit is 2026-09-08, so it is Active.",
     ),
     "nocions_letswave6": dict(
         pattern="declining",
@@ -118,7 +118,7 @@ QUAL = {
         who="André Mouraux (already committing before the gap)",
         status="Active",
         recent="Feature development:Bug fixes",
-        notes="This is a long decline, from 169 commits in 2015 to one commit in 2023 and none in 2024. The longest hole is 29 months, 2023-02 through 2025-06, and only one commit follows it, a small ROI feature by André Mouraux. That is enough to mark HasRecovered Yes, and it is not a revival of the old pace. WoC's last commit is 2025-07-10 and GitHub's is 2026-09-20, both after the 2025-04-01 cutoff, so the project is Active. The latest ten WoC commits mix that one new feature with older SSEP and STFT fixes.",
+        notes="Commits decline from 169 in 2015 to one in 2023 and none in 2024. The longest hole is 29 months, 2023-02 through 2025-06, and only one commit follows it, a small ROI feature by André Mouraux. That counts as a recovery, but not a return to the old pace. WoC's last commit (2025-07-10) and GitHub's (2026-09-20) are both after the cutoff, so it is Active.",
     ),
     "flatsurf_flatsurf": dict(
         pattern="declining",
@@ -130,7 +130,7 @@ QUAL = {
         who="Julian Rüth (already committing before the gap)",
         status="Active",
         recent="Automated bot contributions:Dependency updates",
-        notes="Yearly commits fall from 692 in 2020 to a little over 100 in 2024 and 2025, so the long pattern is declining. The decline never turns into a string of long holes: only one gap reaches three months, a 5-month pause from 2023-05 through 2023-09 right after the 3.13.3 release. Julian Rüth, an existing maintainer, ends it with dependency and toolchain updates. The latest commits are Dependabot bumps. GitHub's last commit is 2025-12-17, so it is Active. WoC has a later commit, 2026-03-23, from another branch.",
+        notes="Yearly commits fall from 692 in 2020 to about 110 in 2024-2025, so the pattern is declining. The only gap of three months or more is a 5-month pause right after the 3.13.3 release in 2023. Julian Rüth, an existing maintainer, ends it with dependency and toolchain updates, and the latest commits are Dependabot bumps. GitHub's last commit is 2025-12-17, so it is Active.",
     ),
     "mano-b_microsec": dict(
         pattern="U-shaped",
@@ -142,7 +142,7 @@ QUAL = {
         who="shibatay2301 (no commits before the gap)",
         status="Active",
         recent="Documentation updates:Other",
-        notes="The yearly counts are 324, 123, 13, 1, 192, and then 1, which is U-shaped: a drop, a 14-month hole from 2022-03 through 2023-04, and a real 2024 return. The pre-gap messages are unlabeled R updates, so the reason for the hole is not in the text. shibatay2301 is a new name and does the return. The latest commits are README edits and an 'Add files via upload'. GitHub's last commit, 2025-10-16, matches WoC and is after the cutoff, so the project is Active even though 2025 is thin.",
+        notes="Yearly counts of 324, 123, 13, 1, 192, and 1 make this U-shaped. The 14-month hole from 2022-03 through 2023-04 is preceded only by bare 'Update file.R' commits, so the reason is not in the text. shibatay2301, new to the project, ends it with bug fixes and README updates. GitHub's last commit is 2025-10-16, after the cutoff, so it is Active.",
     ),
     "ablab_spades": dict(
         pattern="declining",
@@ -154,7 +154,7 @@ QUAL = {
         who="N/A",
         status="Active",
         recent="Bug fixes:Other",
-        notes="Commits fall from 4,442 in 2011 to 128 in 2025, so the long pattern is declining, and the project never actually stops. The longest empty month-run is one month. The commits around it are a docs deploy and an Ubuntu runner bump on one side, and a dev-mode fix plus import cleanup on the other. The latest commits fix the barcode encoder and a contracted-graph iterator and add tests. GitHub's last commit is 2026-09-28, so it is Active.",
+        notes="Commits fall from 4,442 in 2011 to 128 in 2025, so the pattern is declining, but the project never stops. The longest empty run is the single month 2025-06, so there is no inactivity gap. The latest commits fix the barcode encoder and a graph iterator and add tests. GitHub's last commit is 2026-09-28, so it is Active.",
     ),
 }
 
